@@ -1,0 +1,402 @@
+.half-price {
+  &-container {
+    padding-left: 5.3rem;
+    padding-right: 8.3rem;
+    .half-price-header {
+      gap: 4.3rem;
+
+      display: flex;
+      &-brand {
+        // background-image: url(../images/red-brand.png);
+        width: 31.4rem;
+        height: 30.4rem;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        position: relative;
+        .overlay-half {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          top: 5rem;
+          left: 5rem;
+          color: white;
+          h3 {
+            text-align: center;
+            font-family: Inter;
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 4.4rem;
+            letter-spacing: 0.1em;
+            text-align: left;
+          }
+          h2 {
+            font-family: Inter;
+            font-size: 6.4rem;
+            font-weight: 700;
+            line-height: 7.7rem;
+            letter-spacing: 0.2em;
+            text-align: left;
+          }
+        }
+      }
+      &-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .yellow-txt {
+          font-family: Inter;
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 3.8rem;
+          letter-spacing: 0.02em;
+          text-align: left;
+          width: 39.6rem;
+          height: 8.2rem;
+          gap: 0px;
+          border-radius: 3rem 3rem 0px 0px;
+          border: 3px 0px 0px 0px;
+          color: #fe7f00;
+        }
+        .black-txt {
+          font-family: Shippori Mincho B1;
+          font-size: 4.7rem;
+          font-weight: 600;
+          line-height: 6.8rem;
+          letter-spacing: 0.2em;
+          text-align: left;
+        }
+        .red-txt {
+          display: flex;
+          color: red;
+          gap: 3rem;
+          .red-txt-bar {
+            font-family: Inter;
+            font-size: 5.2rem;
+            font-weight: 700;
+            line-height: 6.2rem;
+            letter-spacing: 0.02em;
+            text-align: left;
+            border-top: 3px red solid;
+            border-bottom: 3px red solid;
+            align-items: center;
+            display: flex;
+          }
+          font-family: Inter;
+          font-size: 8.2rem;
+          font-weight: 700;
+          line-height: 9.9rem;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+      }
+    }
+    .items {
+      margin-top: 7.1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8rem;
+      margin-bottom: 14.3rem;
+      margin-left: auto;
+      margin-right: auto;
+      .half-items {
+        border-radius: 2rem;
+        width: 53rem;
+        height: 63.6rem;
+        box-shadow: #666666;
+        border: 1px solid white;
+        box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.3),
+          -4rem 4rem 4rem rgba(0, 0, 0, 0.22);
+        .items-header {
+          background-color: #fe7f00;
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          color: white;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 2.2rem 0;
+          h2 {
+            font-family: Shippori Mincho B1;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 5.8rem;
+            text-align: left;
+          }
+          h3 {
+            font-family: Shippori Mincho B1;
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 4.6rem;
+            text-align: left;
+          }
+        }
+        .items-body {
+          margin-bottom: 4.6rem;
+
+          .price {
+            margin: auto;
+            margin-bottom: 2.1rem;
+            width: 30.5rem;
+            .normal {
+              display: flex;
+              align-items: baseline;
+              font-size: 10.8rem;
+              line-height: 9.5rem;
+              text-align: left;
+              font-family: "Updock", cursive;
+              font-weight: 400;
+              font-style: normal;
+
+              border-bottom: 2px solid #666666;
+              justify-content: center;
+
+              span {
+                font-family: Shippori Mincho B1;
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 4.6rem;
+                text-align: left;
+              }
+              .normal1 {
+                font-family: Shippori Mincho B1;
+                font-size: 3.2rem;
+                font-weight: 600;
+                line-height: 4.6rem;
+                text-align: left;
+              }
+            }
+            .maxium {
+              display: flex;
+              align-items: baseline;
+              justify-content: flex-end;
+              span {
+                font-family: Shippori Mincho B1;
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 3.5rem;
+                text-align: left;
+              }
+              font-size: 5.2rem;
+              font-weight: 400;
+              line-height: 6.5rem;
+              text-align: left;
+              font-family: "Updock", cursive;
+              font-weight: 400;
+              font-style: normal;
+              .maxium1 {
+                font-family: Shippori Mincho B1;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 34.75px;
+                text-align: left;
+              }
+            }
+            .polygon-half-price {
+              margin: auto;
+              background-color: #d9d9d9;
+              width: 6rem;
+              height: 3.2rem;
+              clip-path: polygon(0 0, 50% 100%, 100% 0);
+            }
+          }
+          .red-bar {
+            width: 42.2rem;
+            margin: auto;
+            height: 4.6rem;
+            background-color: red;
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 2.9rem;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+          }
+          .red-price {
+            width: 42.2rem;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #de001a;
+
+            .circle {
+              border-radius: 50%;
+              border: 2px solid #de001a;
+              width: 9.2rem;
+              height: 9.2rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-family: Shippori Mincho B1;
+              font-size: 3.2rem;
+              font-weight: 600;
+              line-height: 4.6rem;
+              text-align: left;
+            }
+            .red-content {
+              border-bottom: red solid 1px;
+              font-family: Updock;
+              font-size: 15rem;
+              font-weight: 400;
+              line-height: 9.5rem;
+              text-align: left;
+              display: flex;
+              align-items: baseline;
+              span {
+                font-family: Shippori Mincho B1;
+                font-size: 4rem;
+                font-weight: 600;
+                line-height: 5.8rem;
+                text-align: left;
+              }
+            }
+          }
+          .mini-price {
+            display: flex;
+            justify-content: flex-end;
+
+            width: 42.2rem;
+            font-family: Updock;
+            font-size: 5.2rem;
+            font-weight: 400;
+            line-height: 4rem;
+            text-align: left;
+            color: #de001a;
+            margin: auto;
+            span {
+              font-family: Shippori Mincho B1;
+              font-size: 2.4rem;
+              font-weight: 600;
+              line-height: 3.4rem;
+              text-align: left;
+            }
+          }
+        }
+        .items-foot {
+          font-family: Inter;
+          font-size: 2.4rem;
+          font-weight: 700;
+          line-height: 2.9rem;
+          letter-spacing: 0.05em;
+          text-align: left;
+          margin: auto;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    @include media-pc-1200 {
+      .half-price-header {
+        &-brand {
+          width: 28rem;
+          height: 28rem;
+          .overlay-half {
+            top: 3rem;
+            h3 {
+              font-size: 3rem;
+            }
+            h2 {
+              font-size: 5.6rem;
+            }
+          }
+        }
+        &-txt {
+          .black-txt {
+            font-size: 4rem;
+          }
+          .red-txt {
+            font-size: 7rem;
+          }
+        }
+      }
+    }
+    @include media-pc-1024 {
+      .half-price-header {
+        &-brand {
+          width: 23rem;
+          height: 23rem;
+          .overlay-half {
+            top: 2rem;
+            left: 3.5rem;
+            h3 {
+              font-size: 2.4rem;
+              line-height: 3.8rem;
+            }
+            h2 {
+              font-size: 4.2rem;
+              line-height: 7rem;
+            }
+          }
+        }
+        &-txt {
+          .black-txt {
+            font-size: 3rem;
+          }
+          .red-txt {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+    @include media-sp{
+      .half-price-header {
+        &-brand {
+          width: 20rem;
+          height: 20rem;
+          .overlay-half {
+            top: 2rem;
+            left: 3.5rem;
+            h3 {
+              font-size: 2rem;
+              line-height: 3.8rem;
+            }
+            h2 {
+              font-size: 3.2rem;
+              line-height: 2rem;
+            }
+          }
+        }
+        &-txt {
+          .black-txt {
+            font-size: 2.8rem;
+          }
+          .red-txt {
+            font-size: 3.8rem;
+          }
+        }
+      }
+    }
+
+    @include media-sp-650 {
+      .half-price-header {
+        flex-direction: column;
+
+        &-txt {
+          .yellow-txt {
+            line-height: 2rem;
+            height: auto;
+            font-size: 4.2rem;
+          }
+          .black-txt{
+            line-height: 5rem;
+            margin-top: 2rem;
+          }
+          .red-txt {
+            margin-top: 2rem;
+            line-height: 7rem;
+          }
+        }
+      }
+    }
+  }
+}

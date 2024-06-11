@@ -1,0 +1,368 @@
+.threestrategies {
+  &-container {
+    padding: 2.3rem 6.3rem 7.5rem 6.3rem;
+
+    .three-ttl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: #fe7f00;
+        font-family: Shippori Mincho B1;
+        font-size: 7.8rem;
+        font-weight: 600;
+        line-height: 11.3rem;
+        text-align: center;
+        width: 154rem;
+        border-bottom: 1px solid #fe7f00;
+      }
+    }
+
+    .three-ways {
+      margin-top: 5rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
+
+      h3 {
+        font-family: Shippori Mincho B1;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 9.2rem;
+        text-align: left;
+        margin-bottom: 1.6rem;
+
+        span {
+          font-family: Shippori Mincho B1;
+          font-size: 6.4rem;
+          font-weight: 600;
+          line-height: 5.8rem;
+          text-align: left;
+          color: #fe7f00;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .three-contents {
+      background-color: #fff5eb;
+      padding-top: 4.2rem;
+      padding-left: 5rem;
+      // padding-right: 5rem;
+      // width: 177.8rem;
+      height: 44rem;
+      padding-right: 5rem;
+
+      h3 {
+        font-family: Shippori Mincho B1;
+        font-size: 3.6rem;
+        font-weight: 600;
+        line-height: 5.2rem;
+        text-align: left;
+        color: #fe7f00;
+      }
+
+      p {
+        font-family: Shippori Mincho B1;
+        font-size: 3.2rem;
+        font-weight: 400;
+        line-height: 4.6rem;
+        text-align: left;
+      }
+
+      .three-first-col {
+        display: flex;
+        justify-content: space-between;
+        gap: 20rem;
+      }
+
+      .three-second-col {
+        margin-top: 2.7rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 8rem;
+      }
+    }
+
+    .under-three {
+      background-color: #ffdfc2;
+      // width: 177.8rem;
+      display: flex;
+
+      justify-content: center;
+
+      p {
+        font-family: Shippori Mincho B1;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3.5rem;
+        text-align: left;
+      }
+      @include media-pc-1440 {
+        p {
+          font-size: 3.2rem;
+          line-height: 4.5rem;
+          margin-left: 3rem;
+          margin-right: 3rem;
+        }
+      }
+    }
+
+    .time-table {
+      // width: 177.8rem;
+      margin-top: 7.5rem;
+
+      table {
+        font-family: "Inter";
+        width: 100%;
+
+        .td1,
+        .th1,
+        .td2,
+        .td3,
+        .td4 {
+          height: 8.3rem;
+          align-items: center;
+          display: flex;
+        }
+
+        tr {
+          border-bottom: 1px solid black;
+        }
+
+        .th1 {
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 2rem;
+          font-family: Shippori Mincho B1;
+          font-size: 4.8rem;
+        }
+
+        font-family: "Inter";
+        .pr5 {
+          padding-right: 6.8rem;
+        }
+        .td1 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 3.8rem;
+          text-align: left;
+        }
+
+        .td2 {
+          font-size: 3.2rem;
+          justify-content: flex-start;
+          width: 43rem;
+          margin-right: 6.8rem;
+        }
+
+        .td3 {
+          font-size: 3.2rem;
+          justify-content: flex-end;
+          width: 10rem;
+          margin-right: 6.8rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .td4 {
+          font-size: 2.6rem;
+          justify-content: flex-start;
+          // width: 115rem;
+          font-family: "Inter";
+          line-height: 3.2rem;
+          // padding-right: 5.6rem;
+          color: #666666;
+          padding-right: 1.6rem;
+        }
+      }
+    }
+    .time-table-1024 {
+      display: none;
+    }
+
+    @include media-pc-1024 {
+      .three-contents {
+        height: auto;
+        width: 100%;
+        .three-first-col {
+          flex-direction: column;
+          gap: 3rem;
+        }
+        .three-second-col {
+          flex-direction: column;
+          gap: 3rem;
+          .three-aws {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      .under-three {
+        width: 100%;
+      }
+
+      .time-table {
+        display: none;
+        // table {
+        //   .td1,
+        //   .td2,
+        //   .td3,
+        //   .td4 {
+        //     height: auto !important;
+        //     padding-top: 1.5rem;
+        //     padding-bottom: 1.5rem;
+        //   }
+        //   .td1,
+        //   .td2 {
+        //     font-size: 4.2rem;
+        //     line-height: 4.8rem;
+        //   }
+        //   .td2 {
+        //     // width: 25rem;
+        //     margin-right: 1.8rem;
+        //   }
+        //   .td3 {
+        //     font-size: 4.2rem;
+        //     width: 14rem;
+        //   }
+        //   .td4 {
+        //     font-size: 3.6rem;
+        //     line-height: 4.2rem;
+        //   }
+        // }
+      }
+      .time-table-1024 {
+        margin-top: 5rem;
+        display: block;
+        .time-table-items {
+          border: 1px solid black;
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          margin-bottom: 4rem;
+          padding-left: 3rem;
+          padding-right: 3rem;
+          //   padding-top: 3rem;
+          span {
+            width: 30rem;
+          }
+          p {
+            display: flex;
+            justify-content: flex-start;
+          }
+          .course-name {
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            display: flex;
+            p {
+              font-size: 4.2rem;
+              font-family: "Inter";
+              
+              font-weight: 500;
+              line-height: 4.2rem;
+              text-align: left;
+            }
+            span {
+              font-size: 3.8rem;
+              font-family: "Inter";
+              font-weight: 700;
+              line-height: 3.8rem;
+              text-align: left;
+              margin-right: 3rem;
+            }
+          }
+          .course-time {
+            margin-bottom: 2rem;
+            display: flex;
+
+            p {
+              font-family: "Inter";
+              font-size: 3.4rem;
+              font-weight: 500;
+              line-height: 4.2rem;
+              text-align: left;
+            }
+            span {
+              font-family: "Inter";
+              font-size: 3.8rem;
+              font-weight: 700;
+              line-height: 3.8rem;
+              margin-right: 3rem;
+              text-align: left;
+            }
+          }
+          .course-content {
+            margin-bottom: 2rem;
+            display: flex;
+
+            p {
+              font-family: "Inter";
+              font-size: 3.2rem;
+              font-weight: 500;
+              line-height: 3.8rem;
+              width: 75%;
+            }
+            span {
+              font-family: "Inter";
+              font-size: 3.8rem;
+              font-weight: 700;
+              margin-right: 3rem;
+              line-height: 3.8rem;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    @include media-pc-860 {
+      .three-contents {
+        height: auto;
+      }
+    }
+    @include media-sp-650 {
+      .three-ttl {
+        h2 {
+          font-size: 4.8rem;
+          line-height: 8.3rem;
+        }
+      }
+      .three-ways {
+        margin-left: 0;
+        margin-right: 0;
+        h3 {
+          font-size: 3rem;
+          line-height: 5.6rem;
+        }
+      }
+      .three-contents {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        h3 {
+          font-size: 2.6rem;
+          line-height: 3.2rem;
+        }
+      }
+      .under-three {
+        p {
+          font-size: 2.4rem;
+        }
+      }
+      .time-table-1024 {
+        .time-table-items {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            span {
+                width: 15rem;
+                font-size: 3.2rem !important;
+            }
+            p {
+                font-size: 3rem !important;
+            }
+        }
+      }
+    }
+  }
+}

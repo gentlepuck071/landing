@@ -1,0 +1,261 @@
+.contact {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25rem;
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+    .contact-ttl {
+      font-family: Inter;
+      font-size: 4.6rem;
+      font-weight: 600;
+      line-height: 5.5rem;
+      text-align: left;
+    }
+    .contact-three-methods {
+      margin-top: 16.1rem;
+      .methods {
+        display: flex;
+        justify-content: baseline;
+
+        margin-bottom: 4.2rem;
+        &-img {
+          position: relative;
+
+          .methods-overlay {
+            position: absolute;
+            top: 37px;
+            left: 31px;
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 4.3rem;
+            text-align: left;
+          }
+          @include media-pc-1024 {
+            .methods-overlay {
+              top: 44px;
+            }
+          }
+        }
+        &-txt {
+          display: flex;
+          align-items: flex-end;
+          div {
+            p {
+              margin-left: 5.5rem;
+              font-family: Inter;
+              font-size: 3.2rem;
+              font-weight: 600;
+              line-height: 4.8rem;
+              text-align: left;
+            }
+          }
+          .methods-black-back {
+            background-color: black;
+            border-radius: 1rem;  
+            color: white;
+            width: 42.2rem;
+            height: 5.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // margin-bottom: -1rem;
+            margin-left: 3.4rem;
+            font-family: Inter;
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 4.8rem;
+            letter-spacing: 0.1em;
+            text-align: left;
+          }
+        }
+      }
+      .border-tops {
+        border-style: dashed solid; /* First dotted, then solid */
+        border-width: 2px 4px;
+        border-color: #fe7f00;
+        margin-bottom: 5.1rem;
+      }
+    }
+    .problems {
+      &-ttl {
+        margin-top: 29rem;
+        font-family: Inter;
+        font-size: 4.6rem;
+        font-weight: 600;
+        line-height: 5.6rem;
+        text-align: left;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-txt {
+        font-family: Inter;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 4.6rem;
+        text-align: left;
+      }
+    }
+    .logo-button {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 6.8rem;
+      gap: 4.9rem;
+      .logo {
+      }
+      .problem-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        width: 58.7rem;
+        border-radius: 6rem;
+        height: 11.2rem;
+        font-family: Inter;
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 3.8rem;
+        text-align: left;
+        background-color: #fe7f00;
+        color: white;
+      }
+    }
+    .application {
+      margin-top: 30rem;
+      margin-bottom: 27.5rem;
+
+      &-ttl {
+        font-family: Inter;
+        font-size: 4.6rem;
+        font-weight: 600;
+        line-height: 5.5rem;
+        text-align: left;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+      }
+      .app-content {
+        margin-top: 8.7rem;
+
+        display: flex;
+        gap: 8rem;
+        .app-phone {
+          p {
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 2.9rem;
+            text-align: left;
+          }
+          h3 {
+            color: #fe7f00;
+            span {
+              font-family: Inter;
+              font-size: 6.4rem;
+              font-weight: 600;
+              line-height: 7.7rem;
+              text-align: left;
+            }
+            font-family: Updock;
+            font-size: 15rem;
+            font-weight: 400;
+            line-height: 10rem;
+            text-align: left;
+          }
+        }
+        .app-button {
+          display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          p {
+            font-family: Inter;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 2.9rem;
+            text-align: left;
+            margin-bottom: 2.3rem;
+            
+          }
+          .button-div {
+            color: white;
+            background-color: #fe7f00;
+            font-family: Inter;
+            font-size: 3.2rem;
+            font-weight: 600;
+            line-height: 3.9rem;
+            text-align: left;
+
+            width: 58.7rem;
+            height: 11.2rem;
+            border-radius: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          }
+        }
+      }
+
+    }
+    @include media-pc-860 {
+      .contact-three-methods {
+        margin-top: 10rem;
+        .methods {
+          .methods-txt {
+            p {
+              margin-left: 2rem;
+            }
+          }
+        }
+        
+      }
+      .application {
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+        .app-content {
+          
+          flex-direction: column;
+        }
+      }
+      .problems {
+        .problems-ttl {
+          margin-top: 15rem;
+        }
+      }
+    }
+    @include media-sp-650 {
+      margin-top: 15rem;
+        .contact-three-methods {
+          .methods {
+            .methods-img {
+              .methods-overlay {
+                top: 2.8rem;
+                left: 2.2rem;
+                font-size: 3.6rem;
+              }
+            }
+            .methods-txt {
+              flex-direction: column;
+            }
+          }
+        }
+        .problems-ttl {
+          font-size: 4rem;
+        }
+        .logo-button {
+          flex-direction: column;
+          align-items: center;
+        }
+        .application .app-content .app-phone h3 {
+          font-size: 12rem;
+        }
+    }
+  }
+}

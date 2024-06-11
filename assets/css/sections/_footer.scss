@@ -1,0 +1,116 @@
+.footer {
+  &-container {
+    background-color: #ff8b0f;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 95rem;
+    .footer-nav {
+    //   width: 96.7rem;
+    gap: 12rem;
+      margin-top: 5.2rem;
+      align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      font-family: Inter;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 2.9rem;
+      text-align: left;
+      .top {
+        color: #e67b34;
+        background-color: white;
+        width: 13rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+      }
+    }
+    .footer-goodworks {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      margin-top: 8.1rem;
+      .goodworks {
+        width: 40rem;
+        height: 7rem;
+        img {
+            width: 100%;
+        }
+      }
+      .footer-logo {
+        width: 20.6rem;
+        height: 10.8rem;    
+      }
+    }
+    .tokyo {
+      width: 145rem;
+      height: 32.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    .footer-last {
+        color: white;
+        margin-top: 5.3rem;
+        &-content {
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 3rem;
+            text-align: center;
+        }
+        .footer-privacy {
+            font-family: Inter;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.8rem;
+            text-align: center;
+            color: white;
+            margin-top: 3.8rem;
+        }
+        &-txt {
+            font-family: Inter;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 1.9rem;
+            text-align: center;
+            margin-top: 4.6rem;
+            margin-bottom: 6.3rem;
+        }
+    }
+    @include media-pc-1024 {
+        .tokyo {
+            width: 85%;
+        }
+        .footer-nav {
+            gap: 5rem;
+        }
+        
+    }
+    @include media-sp {
+        .footer-nav {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer-goodworks {
+            flex-direction: column;
+        }
+    }
+    
+}
+
+}

@@ -1,0 +1,263 @@
+.subsides {
+  margin: 0 3rem;
+  .subsides-header {
+    display: flex;
+    width: 175rem;
+    height: 24.4rem;
+    background-color: #efefef;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2rem;
+    &-brand {
+      position: relative;
+      width: 20.6rem;
+      height: 20rem;
+
+      .yellow-over {
+        position: absolute;
+        top: 6.9rem;
+        left: 2.4rem;
+        font-family: Shippori Mincho B1;
+        font-size: 4.2rem;
+        font-weight: 600;
+        line-height: 6rem;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &-middle {
+      margin-left: 5.2rem;
+      .middle {
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        p {
+          font-family: Shippori Mincho B1;
+          font-size: 5.8rem;
+          font-weight: 600;
+          line-height: 8.4rem;
+          letter-spacing: 0.05em;
+          text-align: left;
+        }
+        hr {
+          width: 32rem;
+          background-color: #666666;
+          height: 3px;
+        }
+      }
+      .subsides-ttl {
+        font-family: Shippori Mincho B1;
+        font-size: 7.8rem;
+        font-weight: 600;
+        line-height: 11.3rem;
+        letter-spacing: 0.05rem;
+        text-align: left;
+        color: #fe7f00;
+        display: flex;
+        align-items: baseline;
+        span {
+          color: black;
+          font-family: Shippori Mincho B1;
+          font-size: 4.8rem;
+          font-weight: 600;
+          line-height: 7rem;
+          letter-spacing: 0.05em;
+          text-align: left;
+        }
+      }
+    }
+    .header-last {
+      margin-top: 2rem;
+      margin-left: 5rem;
+      width: 52rem;
+      height: 17.1rem;
+      border: 1px black solid;
+      font-family: Inter;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 4.8rem;
+      letter-spacing: 0.05em;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      span {
+        padding-left: 1.2rem;
+      }
+    }
+  }
+  .students-voice {
+    margin-top: 9.7rem;
+
+    &-ttl {
+      display: flex;
+      justify-content: center;
+      font-family: Shippori Mincho B1;
+      font-size: 6rem;
+      font-weight: 600;
+      line-height: 8.6rem;
+      text-align: left;
+      color: #fe7f00;
+      span {
+        font-family: Inter;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 4.8rem;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #010101;
+        margin-left: 3rem;
+      }
+    }
+    .voices {
+      display: flex;
+      gap: 7rem;
+      margin-top: 4.2rem;
+      .students-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+
+          width: 17.8rem;
+          height: 17.8rem;
+          img {
+            width: 100%;
+          }
+        }
+        p {
+          font-family: Inter;
+          font-size: 3rem;
+          font-weight: 500;
+          line-height: 5.8rem;
+          text-align: left;
+        }
+      }
+      &-txt {
+        font-family: Inter;
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 5.8rem;
+        text-align: left;
+      }
+    }
+    hr {
+      height: 3px;
+      background-color: #666666;
+      margin-top: 5.1rem;
+      margin-bottom: 5.3rem;
+    }
+    
+  }
+
+  @include media-pc-1200 {
+    .subsides-header {
+      width: 95%;
+      &-middle {
+        margin-left: 3.2rem;
+        .middle {
+          p {
+            font-size: 4.8rem;
+          }
+          hr {
+            width: 26rem;
+          }
+        }
+        .subsides-ttl {
+          font-size: 6.5rem;
+        }
+      }
+      .header-last {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  @include media-pc-1024 {
+    .subsides-header {
+      position: relative;
+      padding-bottom: 1.5rem;
+      // flex-direction: column;
+      height: auto;
+      display: flex;
+      &-brand {
+        position: absolute;
+        top: -12rem;
+        left: -6rem;
+        width: 18rem;
+        .yellow-over {
+          top: 5.9rem;
+          left: 2rem;
+        }
+      }
+      &-middle {
+        .middle {
+          hr {
+            width: 22rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-pc-860 {
+    .subsides-header {
+      flex-direction: column;
+      &-brand {
+        top: -12rem;
+        left: -3rem;
+      }
+    }
+  }
+  @include media-sp-650 {
+    .subsides-header {
+      &-brand {
+        width: 13rem;
+        height: 13rem;
+        top: -9rem;
+        .yellow-over {
+          top: 3.2rem;
+          left: 0.8rem;
+          font-size: 3.2rem;
+        }
+      }
+      &-middle {
+        .middle {
+          margin-top: 5rem;
+          p {
+            line-height: 4.4rem;
+            font-size: 3.2rem;
+          }
+          hr {
+            display: none;
+          }
+        }
+        .subsides-ttl {
+          font-size: 4.5rem;
+          line-height: 4.4rem;
+
+          span {
+            font-size: 3.2rem;
+          }
+        }
+      }
+      .header-last {
+        margin: 0;
+        height: 11.1rem;
+      }
+    }
+    .students-voice {
+      .voices {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+  }
+}
